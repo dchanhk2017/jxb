@@ -3,8 +3,8 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.dchanhk2017</groupId>
     <artifactId>jxbv</artifactId>
-    <name>JAXB Visitor Plugin</name>
-    <version>0.0.1</version>
+    <name>JAXB Visitor Plugin for JDK 10</name>
+    <version>1.0.0</version>
     <url>https://github.com/dchanhk2017/jxbv</url>
     <licenses>
         <license>
@@ -14,11 +14,19 @@
             <comments>A business-friendly OSS license</comments>
         </license>
     </licenses>
+    <developers>
+        <developer>
+            <name>Douglas Chan</name>
+            <email>chanwhdouglas@gmail.com</email>
+            <organization>com.github.dchanhk2017</organization>
+            <organizationUrl>https://github.com/dchanhk2017/</organizationUrl>
+        </developer>
+    </developers>
     <scm>
         <url>https://github.com/dchanhk2017/jxbv</url>
         <connection>scm:git:git://github.com/dchanhk2017/jxbv.git</connection>
         <developerConnection>scm:git:git@github.com:dchanhk2017/jxbv.git</developerConnection>
-        <tag>jaxb-visitor-0.0.1</tag>
+        <tag>jaxb-visitor-1.0.0</tag>
     </scm>
     <distributionManagement>
         <snapshotRepository>
@@ -34,7 +42,7 @@
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.1</version>
+                <version>3.3</version>
                 <configuration>
                     <source>10</source>
                     <target>10</target>
@@ -43,7 +51,7 @@
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.6.2</version>
+                <version>1.6.7</version>
                 <extensions>true</extensions>
                 <configuration>
                     <serverId>ossrh</serverId>
@@ -97,11 +105,6 @@
             <groupId>javax.xml.bind</groupId>
             <artifactId>jaxb-api</artifactId>
             <version>2.4.0-b180725.0427</version>
-        </dependency>
-        <dependency>
-            <groupId>com.sun.xml.bind</groupId>
-            <artifactId>jaxb-impl</artifactId>
-            <version>2.4.0-b180725.0644</version>
         </dependency>
         <dependency>
             <groupId>com.sun.xml.bind</groupId>
